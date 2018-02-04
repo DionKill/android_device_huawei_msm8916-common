@@ -62,46 +62,41 @@ void init_target_properties()
             break;
     fin.close();
 
-    /* hwt1a21l */
-    if (buf.find("C8817D") != std::string::npos) {
-        property_override("ro.product.model", "C8817D");
-        property_override("ro.product.device", "C8817D");
-        property_override("ro.build.product", "C8817D");
-        property_set("persist.radio.multisim.config", "dsds");
-        property_set("ro.telephony.default_network", "8,1");
-        property_set("telephony.lteOnCdmaDevice", "1");
-        property_override("ro.build.description", "C8817D-user 4.4.4 GRJ90 C92B381 release-keys");
-        property_override("ro.build.fingerprint", "Huawei/C8817D/hwC8817D:4.4.4/HuaweiC8817D/C92B381:user/release-keys");
+    /* t1_10-All_models */
+    if (buf.find("t1_10") != std::string::npos) {
+        property_override("ro.product.model", "t1_10");
+        property_override("ro.product.device", "t1_10");
+        property_override("ro.build.product", "t1_10");
+        property_set("ro.telephony.default_network", "9");
+        property_override("ro.build.description", "t1_10-user 5.1.1 HuaweiMediaPad C233B117 release-keys");
+        property_override("ro.build.fingerprint", "Huawei/t1_10/hwt1a21l:5.1.1/HuaweiMediaPad/T1A23LC233B117:user/release-keys");
     }
-    /* C8817E */
-    else if (buf.find("C8817E") != std::string::npos) {
-        property_override("ro.product.model", "C8817E");
-        property_override("ro.product.device", "C8817E");
-        property_override("ro.build.product", "C8817E");
-        property_set("ro.telephony.default_network", "8");
-        property_set("telephony.lteOnCdmaDevice", "1");
-        property_override("ro.build.description", "C8817E-user 4.4.4 GRJ90 C92B380 release-keys");
-        property_override("ro.build.fingerprint", "Huawei/C8817E/hwC8817E:4.4.4/HuaweiC8817E/C92B380:user/release-keys");
+    /* T1-A21W */
+    else if (buf.find("t1_10") != std::string::npos) {
+        property_override("ro.product.model", "t1_10");
+        property_override("ro.product.device", "t1_10");
+        property_override("ro.build.product", "t1_10");
+        property_set("ro.telephony.default_network", "9");
+        property_override("ro.build.description", "t1_10-user 5.1.1 HuaweiMediaPad C233B117 release-keys");
+        property_override("ro.build.fingerprint", "Huawei/t1_10/hwt1a21l:5.1.1/HuaweiMediaPad/T1A23LC233B117:user/release-keys");
     }
-    /* G621-TL00 */
-    else if (buf.find("G621-TL00") != std::string::npos) {
-        property_override("ro.product.model", "G621-TL00");
-        property_override("ro.product.device", "G621-TL00");
-        property_override("ro.build.product", "G621-TL00");
-        property_set("persist.radio.multisim.config", "dsds");
-        property_set("ro.telephony.default_network", "17,1");
-        property_override("ro.build.description", "G621-TL00-user 4.4.4 GRJ90 C01B361SP01 release-keys");
-        property_override("ro.build.fingerprint", "Honor/G621-TL00/hwG621-TL00:4.4.4/HonorG621-TL00/C01B361SP01:user/release-keys");
+    /* T1-A21L */
+    else if (buf.find("T1-A21W") != std::string::npos) {
+        property_override("ro.product.model", "T1-A21W");
+        property_override("ro.product.device", "T1-A21W");
+        property_override("ro.build.product", "T1-A21W");
+        property_set("ro.telephony.default_network", "9");
+        property_override("ro.build.description", "t1_10-user 5.1.1 HuaweiMediaPad C233B117 release-keys");
+        property_override("ro.build.fingerprint", "Huawei/t1_10/hwt1a21l:5.1.1/HuaweiMediaPad/T1A23LC233B117:user/release-keys");
     }
-    /* G620S-UL00 */
-    else if (buf.find("G620S-UL") != std::string::npos) {
-        property_override("ro.product.model", "G620S-UL00");
-        property_override("ro.product.device", "G620S-UL00");
-        property_override("ro.build.product", "G620S-UL00");
-        property_set("persist.radio.multisim.config", "dsds");
-        property_set("ro.telephony.default_network", "9,1");
-        property_override("ro.build.description", "G620S-UL00-user 4.4.4 GRJ90 C17B246 release-keys");
-        property_override("ro.build.fingerprint", "Huawei/G620S-UL00/hwG620S-UL00:4.4.4/HuaweiG620S-UL00/C17B246:user/release-keys");
+    /* T1-A23L */
+    else if (buf.find("T1-A23L") != std::string::npos) {
+        property_override("ro.product.model", "T1-A23L");
+        property_override("ro.product.device", "T1-A23L");
+        property_override("ro.build.product", "T1-A23L");
+        property_set("ro.telephony.default_network", "9");
+        property_override("ro.build.description", "t1_10-user 5.1.1 HuaweiMediaPad C233B117 release-keys");
+        property_override("ro.build.fingerprint", "Huawei/t1_10/hwt1a21l:5.1.1/HuaweiMediaPad/T1A23LC233B117:user/release-keys");
     }
     /* G620S-L01 */
     else if (buf.find("hwt1a21l") != std::string::npos) {
