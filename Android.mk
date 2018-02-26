@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter hwt1a21l T1-A23L,$(TARGET_DEVICE)),)
+ifneq ($(filter cherry che10,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
