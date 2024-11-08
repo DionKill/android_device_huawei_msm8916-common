@@ -54,8 +54,17 @@ TARGET_USE_COMPAT_GRALLOC_ALIGN := true
 TARGET_LIBINIT_MSM8916_DEFINES_FILE := $(VENDOR_PATH)/init/init_hwt1a21l.cpp
 
 # Kernel
+BOARD_DTBTOOL_ARGS := -2
+BOARD_KERNEL_IMAGE_NAME := zImage
+BOARD_KERNEL_SEPARATED_DT := true
 TARGET_KERNEL_SOURCE := kernel/huawei/msm8916
-TARGET_KERNEL_CONFIG := lineageos_hwt1a21l_defconfig
+TARGET_KERNEL_CONFIG := msm8916_defconfig
+
+# Kernel Toolchain
+#KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9-uber/bin
+#KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+# Rom Toolchain
+#TARGET_GCC_VERSION_EXP := 4.9-uber
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
