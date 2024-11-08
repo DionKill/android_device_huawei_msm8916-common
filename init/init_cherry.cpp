@@ -103,14 +103,14 @@ void init_target_properties()
         property_override("ro.build.description", "G620S-UL00-user 4.4.4 GRJ90 C17B246 release-keys");
         property_override("ro.build.fingerprint", "Huawei/G620S-UL00/hwG620S-UL00:4.4.4/HuaweiG620S-UL00/C17B246:user/release-keys");
     }
-    /* G620S-L01 */
-    else if (buf.find("G620S-L01") != std::string::npos) {
-        property_override("ro.product.model", "G620S-L01");
-        property_override("ro.product.device", "G620S-L01");
-        property_override("ro.build.product", "G620S-L01");
+    /* G620S-L01 - modified to HWT1A21L*/
+    else if (buf.find("HWT1A21L") != std::string::npos) {
+        property_override("ro.product.model", "hwt1a21l");
+        property_override("ro.product.device", "hwt1a21l");
+        property_override("ro.build.product", "hwt1a21l");
         property_set("ro.telephony.default_network", "9");
-        property_override("ro.build.description", "G620S-L01-user 4.4.4 GRJ90 C00B380 release-keys");
-        property_override("ro.build.fingerprint", "Huawei/G620S-L01/hwG620S-L01:4.4.4/HuaweiG620S-L01/C00B380:user/release-keys");
+        property_override("ro.build.description", "hwt1a21l-user 4.4.4 GRJ90 C00B380 release-keys");
+        property_override("ro.build.fingerprint", "Huawei/hwt1a21l/hwt1a21l:4.4.4/hwt1a21l/C00B380:user/release-keys");
     }
     /* G620S-L02 */
     else if (buf.find("G620S-L02") != std::string::npos) {
