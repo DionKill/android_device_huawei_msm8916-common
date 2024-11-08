@@ -1,6 +1,7 @@
 Copyright 2015 - The CyanogenMod Project
 
-#Modification of the Huawei Honor 4/4X tree, using the changes from MustangSSC's 14.1-test branch.
+Modification of the Huawei Honor 4/4X tree, using the changes from MustangSSC's 14.1-test branch.
+Don't know if I'll even manage to do this, just a test.
 
 Device configuration for Huawei Mediapad T1 10.
 =====================================
