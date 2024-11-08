@@ -56,7 +56,7 @@ TARGET_LIBINIT_MSM8916_DEFINES_FILE := $(VENDOR_PATH)/init/init_cherry.cpp
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/huawei/msm8916
-TARGET_KERNEL_CONFIG := lineageos_cherry_defconfig
+TARGET_KERNEL_CONFIG := lineageos_hwt1a21l_defconfig
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
